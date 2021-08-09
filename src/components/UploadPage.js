@@ -17,6 +17,7 @@ export default function UploadPage() {
   const handleFileRead = (e) => {
     const employeesProjects = fileToJSON(fileReader.result);
     const maxOverlapProjects = getMaxOverlapProjects(employeesProjects);
+    console.log(maxOverlapProjects);
     setData(maxOverlapProjects);
   }
 

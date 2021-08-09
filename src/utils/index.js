@@ -21,8 +21,6 @@ export const fileToJSON = (content) => {
 export const getMaxOverlapProjects = (employees) => {
   let pairsTable = getPairsTable(employees);
 
-  console.log(pairsTable);
-
   let sortedPairs = pairsTable.sort(function (a, b) {
     return b.totalDays - a.totalDays;
   });
