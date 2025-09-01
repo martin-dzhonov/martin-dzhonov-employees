@@ -1,6 +1,85 @@
+html {
+  background: linear-gradient(130deg, #e0f7fa, #ffe0f0);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
 .App {
   text-align: center;
+  padding-top: 30px;
 }
-.uploadPageContainer {
-  margin: 20px;
+
+.file-input-wrapper {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #4f46e5;
+  background-color: #eef2ff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: all 0.2s ease-in-out;
 }
+
+.file-input-wrapper:hover {
+  background-color: #e0e7ff;
+  border-color: #4338ca;
+}
+
+.file-input-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.file-input-label {
+  padding: 15px 30px;
+  display: inline-block;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+.file-name {
+  margin: 16px;
+  font-size: 16px;
+  color: #4f46e5;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.data-grid-wrapper-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.data-grid-wrapper {
+  display: inline-block;
+}
+
+.data-grid {
+  background-color: transparent !important;
+  border: none;
+  min-width: 600px; 
+  border: 1px solid #4f46e5 !important;
+}
+
+.data-grid .MuiDataGrid-cell,
+.data-grid .MuiDataGrid-columnHeaders {
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-grid .MuiDataGrid-cell {
+  justify-content: center;
+  text-align: center;
+  border-bottom: 1px solid #ccc; 
+}
+
